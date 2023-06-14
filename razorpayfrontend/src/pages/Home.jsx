@@ -45,7 +45,7 @@ export const Home = ()=>{
             
             // handle payment
             const options = {
-                key: "rzp_test_WSpHIcbcEUaGsR", // Enter the Key ID generated from the Dashboard
+                key: process.env.REACT_APP_RAZORPAY_KEY, // Enter the Key ID generated from the Dashboard
                 name: "Acme Corp",
                 description: "Test Transaction",
                 image: "https://example.com/your_logo",
