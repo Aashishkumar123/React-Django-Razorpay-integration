@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "f57e71c7-fc29-4667-b9d2-9d1f4a73c9b1",
+		"name": "razorpay",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10791872"
+	},
+	"item": [
+		{
+			"name": "create order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 100,\n    \"currency\": \"INR\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/razorpay/order/create/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"razorpay",
+						"order",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "complete order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"payment_id\": \"pay_M1mDQlxrpOzqTL\",\n    \"order_id\": \"order_M1mD7qFTtEWb5K\",\n    \"signature\": \"a64809ec9a76afba974783ac7b315f36cfb11dfeed8f2445899042384d508928\",\n    \"amount\": 100\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/razorpay/order/complete/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"razorpay",
+						"order",
+						"complete",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
