@@ -32,3 +32,6 @@ REACT_APP_RAZORPAY_KEY_ID= here add razorpay id key
 ## Razorpay
 1. Create an account razorpay to get the ```ID``` and ```SECRET``` key
 2. You can follow this documentation https://razorpay.com/docs/payments/payment-gateway/web-integration/standard/build-integration/
+
+## Postman
+Download postman collection from <a download href="https://github.com/Aashishkumar123/React-Django-Razorpay-integration/blob/master/razorpay.postman_collection.json">here</a>
