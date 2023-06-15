@@ -8,7 +8,7 @@ git clone https://github.com/Aashishkumar123/React-Django-Razorpay-integration
 
 ### Install following dependencies
 ```
-pip install django djangorestframework python-dotenv razorpay
+pip install django djangorestframework python-dotenv razorpay django-cors-headers
 ```
 
 ### create ```.env``` file, where manange.py file is located
